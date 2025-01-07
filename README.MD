@@ -59,3 +59,7 @@ Change the `ASM` value in the makefile to `java -jar /path/to/kickass/KickAss.ja
 - mass:werk [opcode reference](https://www.masswerk.at/6502/6502_instruction_set.html) for 6502 
 - [6502.org](6502.org) for some nice extra tutorials
 - [codebase64.org](codebase64.org) which made hacking great again
+
+## Artwork
+
+I'm very proud of it.
