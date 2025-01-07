@@ -2,7 +2,7 @@
 
 ![screenshot](doc/screenshot.png)
 
-Snek64 is my first C64 program, made as I was learning. It has a side effect of being actually fun game.
+Snek64 is my first C64 program, made as I was learning. It has a side effect of being an actually fun game.
 
 ## Gameplay
 
