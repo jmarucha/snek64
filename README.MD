@@ -31,6 +31,7 @@ By now I consider the game to be feature-complete. Things that aren't present in
 - Sound effects
 - Music
 - Zero-page variables of any kind (yeah I just couldn't get them to work for some reason)
+- Support for snake longer than 255 units, and scores above 255 points
 
 Maybe the next time.
 
