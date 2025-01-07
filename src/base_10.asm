@@ -1,0 +1,52 @@
+#import "gfx.asm"
+
+
+screen_col: .byte 0 
+screen_row: .byte 0
+
+display_number:
+    lda number_ptr: $FFFF
+    pha
+    
+    tax
+    lda number_hi, x
+    ldx screen_col
+    ldy screen_row
+    jsr put_char
+
+    inx
+
+    pla
+    pha
+    tax
+    lda number_mid, x
+    ldx screen_col
+    inx
+    ldy screen_row
+    jsr put_char
+
+    pla
+    tax
+    lda number_lo, x
+    ldx screen_col
+    inx
+    inx
+    ldy screen_row
+    jsr put_char
+    rts
+
+.macro setup_base10_disp(target_number, pos_x, pos_y) {
+    lda #pos_x
+    sta screen_col
+    lda #pos_y
+    sta screen_row
+    lda #<target_number
+    sta number_ptr
+    lda #>target_number
+    sta number_ptr+1
+}
+
+.align $100
+number_hi:  .text "                                                                                                    111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111122222222222222222222222222222222222222222222222222222222"
+number_mid: .text "0000000000111111111122222222223333333333444444444455555555556666666666777777777788888888889999999999000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000001111111111222222222233333333334444444444555555"
+number_lo:  .text "0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345"
