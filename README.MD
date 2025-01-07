@@ -53,4 +53,8 @@ Change the `ASM` value in the makefile to `java -jar /path/to/kickass/KickAss.ja
 
 ## Resources I found helpful
 
-I mainly learnt from [course by board-b](https://www.youtube.com/watch?v=rFOh_lYcF8A&list=PLU1o_YShTPgoA7_nZ0PutqaPDsitA5RvV), which I really recommend. Joe Forster's [memory map](https://sta.c64.org/cbm64mem.html) was absolutely vital. mass:werk [opcode reference](https://www.masswerk.at/6502/6502_instruction_set.html) for 6502 is the page I used for that. [6502.org] provided some nice extra tutorials and [codebase64.org] is a pleasure to search for hacks.
+- [Course by board-b](https://www.youtube.com/watch?v=rFOh_lYcF8A&list=PLU1o_YShTPgoA7_nZ0PutqaPDsitA5RvV) I really recommend
+- Joe Forster's [memory map](https://sta.c64.org/cbm64mem.html) (absolute lifesaver)
+- mass:werk [opcode reference](https://www.masswerk.at/6502/6502_instruction_set.html) for 6502 
+- [6502.org](6502.org) for some nice extra tutorials
+- [codebase64.org](codebase64.org) which made hacking great again
